@@ -1,0 +1,188 @@
+<html><head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="other_setting.css">
+<link rel="stylesheet" href="fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="popup.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+* {
+  box-sizing: border-box;
+}
+.columns{column-count: 2;}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  box-sizing: border-box;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container > div {
+  flex-grow: 1;
+}
+</style>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+var popup = document.getElementById("myPopup");
+popup.classList.toggle("show");
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">HOME</a>
+    <a href="Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="hProteome.html" class="w3-bar-item w3-button w3-theme-white">hPROTEOME</a>
+    <a href="Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div> 
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" style="border-bottom: 1pt solid grey"><center>eProteinWorkbench</center></h1>
+      <h2 class="w3-text-teal"><center>Integration of proteomic data for eHit generation</center></h2>
+      <p><font size="4">
+      Provide searching and integrating protemic information in relation to protein domains, secondary structures, and possible hit candidates
+      </font></p>
+
+      <div class="columns">
+        <h3 class="w3-text-teal"><a href="Ligand.html">Ligand Binding Domain Set</a></h3>
+        <p><font size="3">The list contains human proteins with ligand binding domians.</font></p>
+        <h3 class="w3-text-teal"><a href="hProteome.html">Human proteome</a></h3>
+        <p><font size="3">The list shows whole list of human proteome (UP000005640) annotated with avaialable 3D structures and binders.</font></p>
+      </div>
+
+      <br>
+      <div class="columns">
+        <h3 class="w3-text-teal">SEQUENCE SEARCH
+        <div class="popup" onclick="myFunction()">
+          <span class="popuptext" id="myPopup">
+          </span>
+        </div>
+        </h3>
+        <h3 class="w3-text-teal">SMILES SEARCH
+        <div class="popup" onclick="myFunction()">
+          <span class="popuptext" id="myPopup">
+          </span>
+        </h3>
+       </div>
+
+<div class="row">
+  <div class="w3-half w3-container flex-container">
+    <p>
+    <form action="./process_seq.php" method="post">
+    <!--JobID: <input id="myJob" type="text" name="job" placeholder="mandatory"> &nbsp;
+    <br> -->
+    (search for homologous sequences in the database)<br><br>
+    Input sequence:<br>
+<!--    
+<textarea name="seq" rows="9" cols=100" wrap="hard" style="font-size: 10pt" placeholder="e.g., 
+-->   
+ <textarea name="seq" wrap="hard" style="width:100%; height:170px;font-size: 10pt" placeholder="e.g.,
+    MEELSQALASSFSVSQDLNSTAAPHPRLSQYKSKYSSLEQSERRRRLLELQKSKRLDYVNHARRLAEDDWTGMESEEENKKDDEEMDIDTVKKLPKHYANQLMLSEWLIDVPSDLGQEWIVVVCPVGKRALIVASRGSTSAYTKSGYCVNRFSSLLPGGNRRNSTAKDYTILDCIYNEVNQTYYVLDVMCWRGHPFYDCQTDFRFYWMHSKLPEEEGLGEKTKLNPFKFVGLKNFPCTPESLCDVLSMDFPFEVDGLLFYHKQTHYSPGSTPLVGWLRPYMVSDVLGVAVPAGPLTTKPDYAGHQLQQIMEHKKSQKEGMKEKLTHKASENGHYELEHLSTPKLKGSSHSPDHPGCLMEN"></textarea><br>
+    <br>
+            <input type="submit" value="SUBMIT">  <input type="reset" value="reset">
+
+          </form>
+
+      <!-- Pagination 
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-black" href="#">1</a>
+          <a class="w3-button w3-hover-black" href="#">2</a>
+          <a class="w3-button w3-hover-black" href="#">3</a>
+          <a class="w3-button w3-hover-black" href="#">4</a>
+          <a class="w3-button w3-hover-black" href="#">5</a>
+          <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+      </div>
+    -->
+          </p>
+  </div>
+  <div class="w3-half w3-container flex-container">
+    <p>
+<form action="./process_smiles.php" method="post">
+
+    <!--JobID: <input id="myJob_smile" type="text" name="job_smile" placeholder="mandatory"> &nbsp;
+    <br> -->
+    (search for similarity molecule in the database)<br><br>
+    Input SMILES:<br>
+<!--
+    <textarea name="smiles" rows="9" cols="width:300%" wrap="hard" style="font-size: 10pt" placeholder="e.g., 
+-->
+    <textarea name="smiles" wrap="hard" style="width:100%; height:170px; font-size: 10pt" placeholder="e.g., 
+    COc1cc2c(cc1Nc1nc(Nc3ccsc3C(N)=O)c3cc[nH]c3n1)N(C(=O)CN(C)C)CC2"></textarea><br>
+    <br>
+            <input type="submit" value="SUBMIT">  <input type="reset" value="reset">
+
+          </form> 
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <!-- Pagination 
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-black" href="#">1</a>
+          <a class="w3-button w3-hover-black" href="#">2</a>
+          <a class="w3-button w3-hover-black" href="#">3</a>
+          <a class="w3-button w3-hover-black" href="#">4</a>
+          <a class="w3-button w3-hover-black" href="#">5</a>
+          <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+      </div>
+    -->
+          </p>
+  </div>
+</div>
+
+  <footer id="myFooter">
+<!--
+  <div class="w3-container w3-theme-l5 w3-padding-16">
+     <h2>Footer</h2>
+    </div>
+-->
+    <div class="w3-container w3-theme-l2">
+      <p>© 2022 <a title="our home page" href="" target="_blank">CAU-CBI</a>/<a href="https://kbds.re.kr/" title="Korea Bio Data Station" target="_blank">K-BDS</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+
+
+
+</body></html>

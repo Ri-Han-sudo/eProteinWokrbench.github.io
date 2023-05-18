@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="other_setting.css">
+<link rel="stylesheet" href="fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="popup.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.columns{column-count: 2;}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='multifilter.js'></script>
+<script type='text/javascript'>
+        $(document).ready(function() {
+        $('.filter').multifilter()
+        })
+  </script>
+
+</head>
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-white">HOME</a>
+    <a href="Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="hProteome.html" class="w3-bar-item w3-button w3-theme-l1">hPROTEOME</a>
+    <a href="Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div>
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+
+      <h2 class="w3-text-teal"><center>Human Proteome</center></h2>
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="hProteome-1.Kinase.html">1.Kinase</a>
+      <a class="w3-button w3-hover-black" href="hProteome-2.GPCR.html">2.GPCR</a>
+      <a class="w3-button w3-hover-black" href="hProteome-3.Channel.html">3.Channel</a>
+      <a class="w3-button w3-hover-black" href="hProteome-4.Transporter.html">4.Transporter</a>
+      <a class="w3-button w3-hover-black" href="hProteome-5.A-F.html">5.A-F</a>
+      <a class="w3-button w3-hover-black" href="hProteome-6.G-K.html">6.G-K</a>
+      <a class="w3-button w3-hover-black" href="hProteome-7.L-R.html">7.L-R</a>
+      <a class="w3-button w3-hover-black" href="hProteome-8.S-Z.html">8.S-Z</a>
+      <a class="w3-button w3-hover-black" href="hProteome-9.etc.html">9.etc</a>
+      <!--<a class="w3-button w3-hover-black" href="#">»</a> -->
+    </div>
+  </div>
+
+
+<p style="font-family:verdana;font-size:7pt;width:150%">FILTER
+<input autocomplete='off' class='filter' name='uniprot id' placeholder='uniprot id' data-col='uniprot id'>
+<input autocomplete='off' class='filter' name='gene name' placeholder='gene name' data-col='gene name'>
+<input autocomplete='off' class='filter' name='protein name' placeholder='protein name' data-col='protein name'>
+<input autocomplete='off' class='filter' name='protein family' placeholder='protein family' data-col='protein family'>
+</p>
+
+
+<br><table>
+
