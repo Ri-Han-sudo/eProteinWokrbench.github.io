@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="../myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="../w3-theme-black.css">
+<link rel="stylesheet" href="../other_setting.css">
+<link rel="stylesheet" href="../fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="../font-awesome.min.css">
+<link rel="stylesheet" href="../popup.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.columns{column-count: 4;}
+</style>
+<script src="ngl/dist/ngl.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-white">HOME</a>
+    <a href="../Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="../hProteome.html" class="w3-bar-item w3-button w3-theme-l1">hPROTEOME</a>
+    <a href="../Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="../Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div> 
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+
+<h3 class=w3-text-teal><a href="https://www.uniprot.org/uniprotkb/P47897/entry" target="_blank">P47897 | SYQ_HUMAN | Glutamine--tRNA ligase (QARS1)</a></h3>
+<h4 class=w3-text-teal>3D structures mapped by conservation among orthologs</h4>
+<h5 class=w3-text-teal>[ Domain: "HUP domains" // tRNA-synt_1c ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom1");
+    stage.loadFile("pdb_data/P47897/co_dom1_4R3Z_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom1_4YE6_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom1_4YE8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom1_4YE9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom1" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/4R3Z" target="_blank">4R3Z</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE6" target="_blank">4YE6</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE8" target="_blank">4YE8</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE9" target="_blank">4YE9</a></li>
+</div>
+<p><a href="pdb_data/P47897/dom1_P47897_conserv.pse" download="dom1_P47897.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Ribosomal protein L25-like" // tRNA-synt_1c_C_N ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom2");
+    stage.loadFile("pdb_data/P47897/co_dom2_4R3Z_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom2_4YE6_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom2_4YE8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom2_4YE9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom2" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/4R3Z" target="_blank">4R3Z</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE6" target="_blank">4YE6</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE8" target="_blank">4YE8</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE9" target="_blank">4YE9</a></li>
+</div>
+<p><a href="pdb_data/P47897/dom2_P47897_conserv.pse" download="dom2_P47897.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Ribosomal protein L25-like" // tRNA-synt_1c_C_C ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom3");
+    stage.loadFile("pdb_data/P47897/co_dom3_4R3Z_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom3_4YE6_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom3_4YE8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom3_4YE9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom3" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/4R3Z" target="_blank">4R3Z</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE6" target="_blank">4YE6</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE8" target="_blank">4YE8</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE9" target="_blank">4YE9</a></li>
+</div>
+<p><a href="pdb_data/P47897/dom3_P47897_conserv.pse" download="dom3_P47897.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "GatB/GatE C-terminal domain" // tRNA_synt_1c_R1 ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom4");
+    stage.loadFile("pdb_data/P47897/co_dom4_4YE6_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom4_4YE8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom4_4YE9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom4" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/4YE6" target="_blank">4YE6</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE8" target="_blank">4YE8</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE9" target="_blank">4YE9</a></li>
+</div>
+<p><a href="pdb_data/P47897/dom4_P47897_conserv.pse" download="dom4_P47897.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Zn-binding domain in glutaminyl-tRNA synthetase" // tRNA-synt_1c ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom5");
+    stage.loadFile("pdb_data/P47897/co_dom5_4R3Z_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom5_4YE6_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom5_4YE8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_dom5_4YE9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom5" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/4R3Z" target="_blank">4R3Z</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE6" target="_blank">4YE6</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE8" target="_blank">4YE8</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE9" target="_blank">4YE9</a></li>
+</div>
+<p><a href="pdb_data/P47897/dom5_P47897_conserv.pse" download="dom5_P47897.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: pdbs with more than 2 multi-domains ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_mdom");
+    stage.loadFile("pdb_data/P47897/co_mdom_4R3Z_cln.pdb").then(chainStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_mdom_4YE6_cln.pdb").then(chainStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_mdom_4YE8_cln.pdb").then(chainStructureRepresentation);
+    stage.loadFile("pdb_data/P47897/co_mdom_4YE9_cln.pdb").then(chainStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_mdom" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/4R3Z" target="_blank">4R3Z</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE6" target="_blank">4YE6</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE8" target="_blank">4YE8</a></li>
+<li><a href="https://www.rcsb.org/structure/4YE9" target="_blank">4YE9</a></li>
+</div>
+<p><a href="pdb_data/P47897/mdom_P47897.pse" download="mdom_P47897.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<br><br>
+<h5 class=w3-text-teal>[ Alpha Fold Model ]   <small><a href="https://alphafold.ebi.ac.uk/entry/P47897" target="_blank">(go)</a></small></h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_af");
+    stage.loadFile("AF_model/co_AF-P47897-F1-model_v3.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_af" style="width:500px; height:400px;"></div>
+<br><br>
+<h4 class=w3-text-teal>Known binders annotated in ChEMBL</h4>
+<p>
+<a href="chembl_data/P47897_Ki_1000_600.csv" download="P47897_Ki_1000_600.csv"><img src="download.png" width="15" height="15"></a> Ki table
+</p>
+<table>
+<thead>
+<th>molecule_chembl_id</th>
+<th>structure</th>
+<th>assay_type</th>
+<th>relation</th>
+<th>values</th>
+<th>units</th>
+<th>mol_wt</th>
+<th>smiles</th>
+<th>organism</th>
+<th>assay_chembl_id</th>
+<th>bao_label</th>
+</thead>
+<tr>
+<td><a href="https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL609187/" target="_blank">CHEMBL609187</a></td>
+<td>
+<?xml version="1.0"?>
+<svg version="1.1" id="topsvg"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:cml="http://www.xml-cml.org/schema" x="0" y="0" width="200px" height="200px" viewBox="0 0 100 100">
+<title>OBDepict</title>
+<rect x="0" y="0" width="100" height="100" fill="white"/>
+<text text-anchor="middle" font-size="6" fill ="black" font-family="sans-serif"
+x="50" y="98" ></text>
+<g transform="translate(0,0)">
+<svg width="100" height="100" x="0" y="0" viewBox="0 0 623.633 468.804"
+font-family="sans-serif" stroke="rgb(0,0,0)" stroke-width="2"  stroke-linecap="round">
+<line x1="421.4" y1="394.2" x2="394.4" y2="394.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="396.9" y1="395.7" x2="383.4" y2="419.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="391.8" y1="392.7" x2="378.3" y2="416.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="394.4" y1="394.2" x2="374.4" y2="359.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="374.4" y1="359.5" x2="334.4" y2="359.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="334.4" y1="359.5" x2="314.4" y2="324.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="314.4" y1="324.9" x2="327.9" y2="301.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="314.4" y1="324.9" x2="274.4" y2="324.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="274.4" y1="324.9" x2="260.9" y2="348.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="241.4" y1="359.5" x2="227.4" y2="359.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="201.4" y1="362.5" x2="187.4" y2="362.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="201.4" y1="356.5" x2="187.4" y2="356.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="214.4" y1="372.5" x2="214.4" y2="386.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="214.4" y1="346.5" x2="214.4" y2="332.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="203.1" y1="313.0" x2="179.7" y2="299.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="179.7" y1="299.5" x2="179.7" y2="259.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="179.709577 259.522190 205.178092 250.270446 206.769644 258.110532 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="150.3" y1="201.9" x2="146.1" y2="175.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="83.6" y1="79.5" x2="87.8" y2="52.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="117.3" y1="232.8" x2="116.8" y2="231.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="113.6" y1="234.9" x2="112.5" y2="232.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="109.8" y1="237.1" x2="108.3" y2="233.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="106.0" y1="239.2" x2="104.1" y2="234.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="102.2" y1="241.3" x2="99.8" y2="235.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="98.5" y1="243.5" x2="95.6" y2="236.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="122.0" y1="230.1" x2="101.1" y2="213.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="141.3" y1="271.1" x2="139.7" y2="271.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="142.1" y1="275.3" x2="139.3" y2="275.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="143.0" y1="279.6" x2="138.9" y2="279.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="143.9" y1="283.8" x2="138.4" y2="284.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="144.7" y1="288.1" x2="138.0" y2="288.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="145.6" y1="292.3" x2="137.6" y2="292.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="140.2" y1="265.8" x2="117.6" y2="280.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="546.0" y1="127.0" x2="546.0" y2="100.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="552.0" y1="127.0" x2="552.0" y2="100.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="549.0" y1="100.0" x2="572.4" y2="86.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="549.0" y1="100.0" x2="514.4" y2="80.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="514.4" y1="80.0" x2="487.4" y2="80.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="514.4" y1="80.0" x2="500.9" y2="103.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="514.4" y1="80.0" x2="514.4" y2="53.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="153.3" y1="153.2" x2="172.4" y2="134.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="172.4" y1="134.1" x2="160.2" y2="110.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="163.2" y1="132.0" x2="154.7" y2="115.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="141.4" y1="100.5" x2="114.7" y2="104.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="114.7" y1="104.7" x2="108.4" y2="144.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="108.4" y1="144.2" x2="132.5" y2="156.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="179.7" y1="259.5" x2="183.9" y2="232.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="174.4" y1="214.1" x2="150.3" y2="201.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="150.3" y1="201.9" x2="122.0" y2="230.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="122.0" y1="230.1" x2="140.2" y2="265.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="140.2" y1="265.8" x2="179.7" y2="259.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="83.6" y1="79.5" x2="58.4" y2="89.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="44.2" y1="106.9" x2="40.0" y2="133.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="51.0" y1="110.0" x2="48.0" y2="128.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="40.0" y1="133.3" x2="61.0" y2="150.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="83.4" y1="153.8" x2="108.4" y2="144.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="82.7" y1="146.4" x2="100.2" y2="139.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="114.7" y1="104.7" x2="83.6" y2="79.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="105.5" y1="106.5" x2="83.7" y2="88.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<text x="577.632626" y="88.000000" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="542.991610" y="148.000000" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="468.350594" y="88.000000" fill="rgb(127,178,255)"  stroke="rgb(127,178,255)" stroke-width="1" font-size="16" >F</text>
+<text x="488.350594" y="122.641016" fill="rgb(127,178,255)"  stroke="rgb(127,178,255)" stroke-width="1" font-size="16" >F</text>
+<text x="508.350594" y="48.000000" fill="rgb(127,178,255)"  stroke="rgb(127,178,255)" stroke-width="1" font-size="16" >F</text>
+<text x="330.350594" y="298.240158" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >NH</text>
+<text x="354.350594" y="301.920158" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="13" >2</text>
+<text x="248.350594" y="367.522190" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="208.350594" y="367.522190" fill="rgb(255,127,0)"  stroke="rgb(255,127,0)" stroke-width="1" font-size="16" >P</text>
+<text x="208.350594" y="327.522190" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="168.350594" y="367.522190" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="219.150594" y="385.410190" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >_</text>
+<text x="208.350594" y="407.522190" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="368.350594" y="436.804222" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="430.350594" y="402.163206" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >NH</text>
+<text x="454.350594" y="405.843206" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="13" >2</text>
+<text x="212.910011" y="259.564427" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="179.966956" y="228.014656" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="136.295482" y="313.724750" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="88.655221" y="295.565130" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >HO</text>
+<text x="138.069316" y="170.347503" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="78.699207" y="252.474026" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="72.956585" y="212.966492" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >HO</text>
+<text x="148.193968" y="106.422971" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="65.085838" y="166.522601" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="40.257379" y="101.842252" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="85.857974" y="48.000000" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >NH</text>
+<text x="109.857974" y="51.680000" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="13" >2</text>
+<text x="85.439333" y="212.047607" fill="rgb(170,91,242)"  stroke="rgb(170,91,242)" stroke-width="1" font-size="13" >+</text>
+<text x="75.539333" y="223.323607" fill="rgb(170,91,242)"  stroke="rgb(170,91,242)" stroke-width="1" font-size="16" >Na</text>
+</svg>
+</g>
+</svg>
+
+</td>
+<td>Ki</td>
+<td>=</td>
+<td>280.0</td>
+<td>nM</td>
+<td>597.38</td>
+<td>NC(=O)CCC(N)COP(=O)([O-])OC[C@H]1OC(n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=C(O)C(F)(F)F.[Na+]</td>
+<td>Homo sapiens</td>
+<td><a href="https://www.ebi.ac.uk/chembl/assay_report_card/CHEMBL688462/" target="_blank">CHEMBL688462</a></td>
+<td>single protein format</td>
+</tr>
+</table>
+
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+
+  <footer id="myFooter">
+<!--
+  <div class="w3-container w3-theme-l5 w3-padding-16">
+     <h2>Footer</h2>
+    </div>
+-->
+    <div class="w3-container w3-theme-l2">
+      <p>&copy; 2022 <a title="our home page" href="" target="_blank">CAU-CBI</a>/<a href="https://kbds.re.kr/" title="Korea Bio Data Station" target="_blank">K-BDS</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+

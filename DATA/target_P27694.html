@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="../myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="../w3-theme-black.css">
+<link rel="stylesheet" href="../other_setting.css">
+<link rel="stylesheet" href="../fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="../font-awesome.min.css">
+<link rel="stylesheet" href="../popup.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.columns{column-count: 4;}
+</style>
+<script src="ngl/dist/ngl.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-white">HOME</a>
+    <a href="../Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="../hProteome.html" class="w3-bar-item w3-button w3-theme-l1">hPROTEOME</a>
+    <a href="../Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="../Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div> 
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+
+<h3 class=w3-text-teal><a href="https://www.uniprot.org/uniprotkb/P27694/entry" target="_blank">P27694 | RFA1_HUMAN | Replication protein A 70 kDa DNA-binding subunit (RPA1)</a></h3>
+<h4 class=w3-text-teal>3D structures mapped by conservation among orthologs</h4>
+<h5 class=w3-text-teal>[ Domain: "Nucleic acid-binding proteins" // Rep_fac-A_C_C ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom1");
+    stage.loadFile("pdb_data/P27694/co_dom1_1L1O_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom1_1L1O_F_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom1" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1L1O" target="_blank">1L1O</a></li>
+</div>
+<p><a href="pdb_data/P27694/dom1_P27694_conserv.pse" download="dom1_P27694.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Nucleic acid-binding proteins" // Rep-A_N ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom2");
+    stage.loadFile("pdb_data/P27694/co_dom2_1EWI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_2B29_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_2B3G_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4IJH_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4IJL_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4IPC_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4IPD_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4IPG_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4IPH_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4LUO_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4LUV_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4LUZ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4LW1_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4LWC_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4NB3_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4O0A_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4R4C_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4R4I_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4R4O_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4R4Q_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_4R4T_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5E7N_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5EAY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5EAY_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5EAY_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5EAY_D_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5N85_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom2_5N8A_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom2" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1EWI" target="_blank">1EWI</a></li>
+<li><a href="https://www.rcsb.org/structure/2B29" target="_blank">2B29</a></li>
+<li><a href="https://www.rcsb.org/structure/2B3G" target="_blank">2B3G</a></li>
+<li><a href="https://www.rcsb.org/structure/4IJH" target="_blank">4IJH</a></li>
+<li><a href="https://www.rcsb.org/structure/4IJL" target="_blank">4IJL</a></li>
+<li><a href="https://www.rcsb.org/structure/4IPC" target="_blank">4IPC</a></li>
+<li><a href="https://www.rcsb.org/structure/4IPD" target="_blank">4IPD</a></li>
+<li><a href="https://www.rcsb.org/structure/4IPG" target="_blank">4IPG</a></li>
+<li><a href="https://www.rcsb.org/structure/4IPH" target="_blank">4IPH</a></li>
+<li><a href="https://www.rcsb.org/structure/4LUO" target="_blank">4LUO</a></li>
+<li><a href="https://www.rcsb.org/structure/4LUV" target="_blank">4LUV</a></li>
+<li><a href="https://www.rcsb.org/structure/4LUZ" target="_blank">4LUZ</a></li>
+<li><a href="https://www.rcsb.org/structure/4LW1" target="_blank">4LW1</a></li>
+<li><a href="https://www.rcsb.org/structure/4LWC" target="_blank">4LWC</a></li>
+<li><a href="https://www.rcsb.org/structure/4NB3" target="_blank">4NB3</a></li>
+<li><a href="https://www.rcsb.org/structure/4O0A" target="_blank">4O0A</a></li>
+<li><a href="https://www.rcsb.org/structure/4R4C" target="_blank">4R4C</a></li>
+<li><a href="https://www.rcsb.org/structure/4R4I" target="_blank">4R4I</a></li>
+<li><a href="https://www.rcsb.org/structure/4R4O" target="_blank">4R4O</a></li>
+<li><a href="https://www.rcsb.org/structure/4R4Q" target="_blank">4R4Q</a></li>
+<li><a href="https://www.rcsb.org/structure/4R4T" target="_blank">4R4T</a></li>
+<li><a href="https://www.rcsb.org/structure/5E7N" target="_blank">5E7N</a></li>
+<li><a href="https://www.rcsb.org/structure/5EAY" target="_blank">5EAY</a></li>
+<li><a href="https://www.rcsb.org/structure/5N85" target="_blank">5N85</a></li>
+<li><a href="https://www.rcsb.org/structure/5N8A" target="_blank">5N8A</a></li>
+</div>
+<p><a href="pdb_data/P27694/dom2_P27694_conserv.pse" download="dom2_P27694.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Nucleic acid-binding proteins" // REPA_OB_2 ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom3");
+    stage.loadFile("pdb_data/P27694/co_dom3_1FGU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom3_1FGU_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom3_1JMC_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom3" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1FGU" target="_blank">1FGU</a></li>
+<li><a href="https://www.rcsb.org/structure/1JMC" target="_blank">1JMC</a></li>
+</div>
+<p><a href="pdb_data/P27694/dom3_P27694_conserv.pse" download="dom3_P27694.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Rubredoxin-related" // Rep_fac-A_C_N ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom4");
+    stage.loadFile("pdb_data/P27694/co_dom4_1L1O_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_dom4_1L1O_F_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom4" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1L1O" target="_blank">1L1O</a></li>
+</div>
+<p><a href="pdb_data/P27694/dom4_P27694_conserv.pse" download="dom4_P27694.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: pdbs with more than 2 multi-domains ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_mdom");
+    stage.loadFile("pdb_data/P27694/co_mdom_1L1O_cln.pdb").then(chainStructureRepresentation);
+    stage.loadFile("pdb_data/P27694/co_mdom_5EAY_cln.pdb").then(chainStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_mdom" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1L1O" target="_blank">1L1O</a></li>
+<li><a href="https://www.rcsb.org/structure/5EAY" target="_blank">5EAY</a></li>
+</div>
+<p><a href="pdb_data/P27694/mdom_P27694.pse" download="mdom_P27694.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<br><br>
+<h5 class=w3-text-teal>[ Alpha Fold Model ]   <small><a href="https://alphafold.ebi.ac.uk/entry/P27694" target="_blank">(go)</a></small></h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_af");
+    stage.loadFile("AF_model/co_AF-P27694-F1-model_v3.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_af" style="width:500px; height:400px;"></div>
+<br><br>
+<h4 class=w3-text-teal>Known binders annotated in ChEMBL</h4>
+<p>
+</p>
+<table>
+<thead>
+<th>molecule_chembl_id</th>
+<th>structure</th>
+<th>assay_type</th>
+<th>relation</th>
+<th>values</th>
+<th>units</th>
+<th>mol_wt</th>
+<th>smiles</th>
+<th>organism</th>
+<th>assay_chembl_id</th>
+<th>bao_label</th>
+</thead>
+</table>
+
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+
+  <footer id="myFooter">
+<!--
+  <div class="w3-container w3-theme-l5 w3-padding-16">
+     <h2>Footer</h2>
+    </div>
+-->
+    <div class="w3-container w3-theme-l2">
+      <p>&copy; 2022 <a title="our home page" href="" target="_blank">CAU-CBI</a>/<a href="https://kbds.re.kr/" title="Korea Bio Data Station" target="_blank">K-BDS</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+

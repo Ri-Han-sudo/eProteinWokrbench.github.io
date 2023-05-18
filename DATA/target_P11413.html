@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="../myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="../w3-theme-black.css">
+<link rel="stylesheet" href="../other_setting.css">
+<link rel="stylesheet" href="../fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="../font-awesome.min.css">
+<link rel="stylesheet" href="../popup.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.columns{column-count: 4;}
+</style>
+<script src="ngl/dist/ngl.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-white">HOME</a>
+    <a href="../Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="../hProteome.html" class="w3-bar-item w3-button w3-theme-l1">hPROTEOME</a>
+    <a href="../Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="../Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div> 
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+
+<h3 class=w3-text-teal><a href="https://www.uniprot.org/uniprotkb/P11413/entry" target="_blank">P11413 | G6PD_HUMAN | Glucose-6-phosphate 1-dehydrogenase (G6PD)</a></h3>
+<h4 class=w3-text-teal>3D structures mapped by conservation among orthologs</h4>
+<h5 class=w3-text-teal>[ Domain: "NAD(P)-binding Rossmann-fold domains" // G6PD_N ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom1");
+    stage.loadFile("pdb_data/P11413/co_dom1_1QKI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_1QKI_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_1QKI_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_1QKI_D_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_2BH9_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_2BHL_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_2BHL_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_5UKW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_6E07_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_6E07_L_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom1_6E08_L_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom1" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1QKI" target="_blank">1QKI</a></li>
+<li><a href="https://www.rcsb.org/structure/2BH9" target="_blank">2BH9</a></li>
+<li><a href="https://www.rcsb.org/structure/2BHL" target="_blank">2BHL</a></li>
+<li><a href="https://www.rcsb.org/structure/5UKW" target="_blank">5UKW</a></li>
+<li><a href="https://www.rcsb.org/structure/6E07" target="_blank">6E07</a></li>
+<li><a href="https://www.rcsb.org/structure/6E08" target="_blank">6E08</a></li>
+</div>
+<p><a href="pdb_data/P11413/dom1_P11413_conserv.pse" download="dom1_P11413.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "Glyceraldehyde-3-phosphate dehydrogenase-like, C-terminal domain" // G6PD_C ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom2");
+    stage.loadFile("pdb_data/P11413/co_dom2_1QKI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_1QKI_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_1QKI_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_1QKI_D_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_2BH9_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_2BHL_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_2BHL_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_5UKW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_6E07_C_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_6E07_L_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_dom2_6E08_L_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom2" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1QKI" target="_blank">1QKI</a></li>
+<li><a href="https://www.rcsb.org/structure/2BH9" target="_blank">2BH9</a></li>
+<li><a href="https://www.rcsb.org/structure/2BHL" target="_blank">2BHL</a></li>
+<li><a href="https://www.rcsb.org/structure/5UKW" target="_blank">5UKW</a></li>
+<li><a href="https://www.rcsb.org/structure/6E07" target="_blank">6E07</a></li>
+<li><a href="https://www.rcsb.org/structure/6E08" target="_blank">6E08</a></li>
+</div>
+<p><a href="pdb_data/P11413/dom2_P11413_conserv.pse" download="dom2_P11413.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: pdbs with more than 2 multi-domains ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_mdom");
+    stage.loadFile("pdb_data/P11413/co_mdom_1QKI_cln.pdb").then(chainStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_mdom_2BHL_cln.pdb").then(chainStructureRepresentation);
+    stage.loadFile("pdb_data/P11413/co_mdom_6E07_cln.pdb").then(chainStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_mdom" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1QKI" target="_blank">1QKI</a></li>
+<li><a href="https://www.rcsb.org/structure/2BHL" target="_blank">2BHL</a></li>
+<li><a href="https://www.rcsb.org/structure/6E07" target="_blank">6E07</a></li>
+</div>
+<p><a href="pdb_data/P11413/mdom_P11413.pse" download="mdom_P11413.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<br><br>
+<h5 class=w3-text-teal>[ Alpha Fold Model ]   <small><a href="https://alphafold.ebi.ac.uk/entry/P11413" target="_blank">(go)</a></small></h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_af");
+    stage.loadFile("AF_model/co_AF-P11413-F1-model_v3.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_af" style="width:500px; height:400px;"></div>
+<br><br>
+<h4 class=w3-text-teal>Known binders annotated in ChEMBL</h4>
+<p>
+<a href="chembl_data/P11413_IC50_1000_600.csv" download="P11413_IC50_1000_600.csv"><img src="download.png" width="15" height="15"></a> IC50 table   
+</p>
+<table>
+<thead>
+<th>molecule_chembl_id</th>
+<th>structure</th>
+<th>assay_type</th>
+<th>relation</th>
+<th>values</th>
+<th>units</th>
+<th>mol_wt</th>
+<th>smiles</th>
+<th>organism</th>
+<th>assay_chembl_id</th>
+<th>bao_label</th>
+</thead>
+<tr>
+<td><a href="https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL2057971/" target="_blank">CHEMBL2057971</a></td>
+<td>
+<?xml version="1.0"?>
+<svg version="1.1" id="topsvg"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:cml="http://www.xml-cml.org/schema" x="0" y="0" width="200px" height="200px" viewBox="0 0 100 100">
+<title>OBDepict</title>
+<rect x="0" y="0" width="100" height="100" fill="white"/>
+<text text-anchor="middle" font-size="6" fill ="black" font-family="sans-serif"
+x="50" y="98" ></text>
+<g transform="translate(0,0)">
+<svg width="100" height="100" x="0" y="0" viewBox="0 0 388.422 321.978"
+font-family="sans-serif" stroke="rgb(0,0,0)" stroke-width="2"  stroke-linecap="round">
+<line x1="142.9" y1="124.5" x2="141.3" y2="124.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="143.5" y1="128.8" x2="140.7" y2="128.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="144.2" y1="133.1" x2="140.0" y2="133.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="144.8" y1="137.4" x2="139.4" y2="137.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="145.5" y1="141.7" x2="138.7" y2="141.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="146.1" y1="146.0" x2="138.1" y2="146.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="74.790194 80.166700 49.485185 70.171925 53.486015 63.244201 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="74.8" y1="80.2" x2="51.3" y2="93.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="142.095759 80.166700 138.095759 53.255011 146.095759 53.255011 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="210.2" y1="124.3" x2="208.6" y2="124.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="210.9" y1="128.4" x2="208.0" y2="128.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="211.5" y1="132.6" x2="207.4" y2="132.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="212.2" y1="136.8" x2="206.7" y2="136.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="212.8" y1="140.9" x2="206.1" y2="140.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="213.4" y1="145.1" x2="205.4" y2="145.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="175.772108 138.493476 171.772108 112.440849 179.772108 112.440849 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="243.9" y1="182.8" x2="242.3" y2="182.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="244.6" y1="187.1" x2="241.7" y2="187.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="245.2" y1="191.4" x2="241.0" y2="191.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="245.8" y1="195.7" x2="240.4" y2="195.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="246.5" y1="200.0" x2="239.8" y2="200.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="247.1" y1="204.3" x2="239.1" y2="204.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="276.801155 196.796686 280.801155 223.708375 272.801155 223.708375 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="276.8" y1="196.8" x2="310.4" y2="216.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="309.8" y1="213.3" x2="335.1" y2="207.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="311.1" y1="219.1" x2="336.3" y2="213.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="310.4" y1="216.2" x2="298.5" y2="253.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="298.5" y1="253.1" x2="315.8" y2="272.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="243.124806 138.493476 239.124806 111.693476 247.124806 111.693476 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="310.4" y1="177.4" x2="276.8" y2="196.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="276.8" y1="196.8" x2="243.1" y2="177.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="243.1" y1="177.4" x2="243.1" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="243.1" y1="138.5" x2="310.4" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="310.4" y1="138.5" x2="310.4" y2="177.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="209.4" y1="80.2" x2="209.4" y2="119.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="209.4" y1="119.1" x2="175.8" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.8" y1="138.5" x2="142.1" y2="119.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="142.1" y1="119.1" x2="142.1" y2="80.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="142.1" y1="80.2" x2="175.8" y2="60.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.8" y1="60.7" x2="209.4" y2="80.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="142.1" y1="119.1" x2="108.4" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="108.4" y1="138.5" x2="74.8" y2="119.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="74.8" y1="119.1" x2="74.8" y2="80.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="74.8" y1="80.2" x2="108.4" y2="60.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="108.4" y1="60.7" x2="142.1" y2="80.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="243.1" y1="177.4" x2="209.4" y2="196.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="209.4" y1="196.8" x2="175.8" y2="177.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.8" y1="177.4" x2="175.8" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="209.4" y1="119.1" x2="243.1" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<text x="318.462164" y="289.978482" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="342.422257" y="216.100521" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="270.801155" y="244.963386" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="239.124806" y="225.544694" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="263.124806" y="229.224694" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="237.124806" y="106.493476" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="203.448457" y="165.935735" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="169.772108" y="107.608959" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="138.095759" y="167.241484" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="162.095759" y="170.921484" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="136.095759" y="48.000000" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="34.007218" y="68.079182" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="22.000000" y="108.241714" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >HO</text>
+</svg>
+</g>
+</svg>
+
+</td>
+<td>IC50</td>
+<td>=</td>
+<td>900.0</td>
+<td>nM</td>
+<td>334.5</td>
+<td>C[C@]12CC[C@H](O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](C(=O)CO)CC[C@@H]12</td>
+<td>Homo sapiens</td>
+<td><a href="https://www.ebi.ac.uk/chembl/assay_report_card/CHEMBL2061901/" target="_blank">CHEMBL2061901</a></td>
+<td>cell-based format</td>
+</tr>
+<tr>
+<td><a href="https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL2057293/" target="_blank">CHEMBL2057293</a></td>
+<td>
+<?xml version="1.0"?>
+<svg version="1.1" id="topsvg"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:cml="http://www.xml-cml.org/schema" x="0" y="0" width="200px" height="200px" viewBox="0 0 100 100">
+<title>OBDepict</title>
+<rect x="0" y="0" width="100" height="100" fill="white"/>
+<text text-anchor="middle" font-size="6" fill ="black" font-family="sans-serif"
+x="50" y="98" ></text>
+<g transform="translate(0,0)">
+<svg width="100" height="100" x="0" y="0" viewBox="0 0 478.439 276.965"
+font-family="sans-serif" stroke="rgb(0,0,0)" stroke-width="2"  stroke-linecap="round">
+<line x1="425.7" y1="172.1" x2="400.3" y2="166.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="400.3" y1="166.7" x2="382.9" y2="185.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="361.5" y1="192.9" x2="336.1" y2="187.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="333.3" y1="188.4" x2="325.3" y2="163.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="339.0" y1="186.6" x2="331.0" y2="161.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="336.1" y1="187.5" x2="318.8" y2="206.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="298.8" y1="210.0" x2="276.3" y2="197.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="276.317805 196.965378 280.317805 223.765378 272.317805 223.765378 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="208.0" y1="152.6" x2="209.6" y2="152.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="207.4" y1="148.3" x2="210.3" y2="148.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="206.7" y1="144.0" x2="210.9" y2="144.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="206.1" y1="139.7" x2="211.5" y2="139.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="205.5" y1="135.4" x2="212.2" y2="135.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="204.8" y1="131.1" x2="212.8" y2="131.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="208.818690 196.965378 212.818690 223.765378 204.818690 223.765378 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="140.5" y1="152.7" x2="142.1" y2="152.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="139.8" y1="148.5" x2="142.7" y2="148.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="139.2" y1="144.4" x2="143.4" y2="144.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="138.6" y1="140.2" x2="144.0" y2="140.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="137.9" y1="136.0" x2="144.6" y2="136.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="137.3" y1="131.8" x2="145.3" y2="131.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="107.499115 138.470872 111.499115 165.270872 103.499115 165.270872 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="70.7" y1="80.0" x2="70.7" y2="53.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="76.7" y1="80.0" x2="76.7" y2="53.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="106.7" y1="94.1" x2="108.3" y2="94.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="106.1" y1="89.8" x2="108.9" y2="89.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="105.4" y1="85.5" x2="109.6" y2="85.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="104.8" y1="81.3" x2="110.2" y2="81.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="104.1" y1="77.0" x2="110.9" y2="77.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="103.5" y1="72.7" x2="111.5" y2="72.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="175.045498 138.470872 179.045498 164.598418 171.045498 164.598418 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="40.0" y1="99.5" x2="73.7" y2="80.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="73.7" y1="80.0" x2="107.5" y2="99.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="107.5" y1="99.5" x2="107.5" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="107.5" y1="138.5" x2="40.0" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="40.0" y1="138.5" x2="40.0" y2="99.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="276.3" y1="197.0" x2="276.3" y2="157.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="276.3" y1="157.9" x2="242.6" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="242.6" y1="138.5" x2="208.8" y2="157.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="208.8" y1="157.9" x2="208.8" y2="197.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="208.8" y1="197.0" x2="242.6" y2="216.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="242.6" y1="216.4" x2="276.3" y2="197.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.0" y1="138.5" x2="141.3" y2="157.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="141.3" y1="157.9" x2="141.3" y2="197.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="141.3" y1="197.0" x2="175.0" y2="216.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.0" y1="216.4" x2="208.8" y2="197.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="208.8" y1="157.9" x2="175.0" y2="138.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="107.5" y1="138.5" x2="141.3" y2="157.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.0" y1="138.5" x2="175.0" y2="99.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.0" y1="99.5" x2="141.3" y2="80.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="141.3" y1="80.0" x2="107.5" y2="99.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<text x="434.438546" y="182.756445" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="458.438546" y="186.436445" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="368.249453" y="203.604244" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="368.249453" y="219.604244" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >H</text>
+<text x="304.060360" y="224.452042" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="304.060360" y="240.452042" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >H</text>
+<text x="318.100183" y="158.438758" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="270.317805" y="244.965378" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="202.818690" y="244.965378" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="204.818690" y="125.945406" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="228.818690" y="129.625406" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="169.045498" y="185.467209" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="135.272306" y="126.972703" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="101.499115" y="186.470872" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="103.499115" y="67.474535" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="127.499115" y="71.154535" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="67.725923" y="48.000000" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+</svg>
+</g>
+</svg>
+
+</td>
+<td>IC50</td>
+<td>=</td>
+<td>1000.0</td>
+<td>nM</td>
+<td>360.54</td>
+<td>CCNC(=O)N[C@H]1CC[C@@]2(C)[C@@H](CC[C@H]3[C@@H]4CCC(=O)[C@@]4(C)CC[C@@H]32)C1</td>
+<td>Homo sapiens</td>
+<td><a href="https://www.ebi.ac.uk/chembl/assay_report_card/CHEMBL2061901/" target="_blank">CHEMBL2061901</a></td>
+<td>cell-based format</td>
+</tr>
+</table>
+
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+
+  <footer id="myFooter">
+<!--
+  <div class="w3-container w3-theme-l5 w3-padding-16">
+     <h2>Footer</h2>
+    </div>
+-->
+    <div class="w3-container w3-theme-l2">
+      <p>&copy; 2022 <a title="our home page" href="" target="_blank">CAU-CBI</a>/<a href="https://kbds.re.kr/" title="Korea Bio Data Station" target="_blank">K-BDS</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+

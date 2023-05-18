@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="../myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="../w3-theme-black.css">
+<link rel="stylesheet" href="../other_setting.css">
+<link rel="stylesheet" href="../fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="../font-awesome.min.css">
+<link rel="stylesheet" href="../popup.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.columns{column-count: 4;}
+</style>
+<script src="ngl/dist/ngl.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-white">HOME</a>
+    <a href="../Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="../hProteome.html" class="w3-bar-item w3-button w3-theme-l1">hPROTEOME</a>
+    <a href="../Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="../Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div> 
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+
+<h3 class=w3-text-teal><a href="https://www.uniprot.org/uniprotkb/P24863/entry" target="_blank">P24863 | CCNC_HUMAN | Cyclin-C (CCNC)</a></h3>
+<h4 class=w3-text-teal>3D structures mapped by conservation among orthologs</h4>
+<h5 class=w3-text-teal>[ Domain: "Cyclin-like" // Cyclin_N_1 ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom1");
+    stage.loadFile("pdb_data/P24863/co_dom1_3RGF_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4CRL_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F6S_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F6U_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F6W_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F70_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F7J_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F7L_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F7N_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4F7S_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_4G6L_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5BNJ_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5CEI_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5FGK_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5HBE_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5HBH_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5HBJ_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5HNB_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5HVY_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5I5Z_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5ICP_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5IDN_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5XQX_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_5XS2_B_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P24863/co_dom1_6T41_B_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom1" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/3RGF" target="_blank">3RGF</a></li>
+<li><a href="https://www.rcsb.org/structure/4CRL" target="_blank">4CRL</a></li>
+<li><a href="https://www.rcsb.org/structure/4F6S" target="_blank">4F6S</a></li>
+<li><a href="https://www.rcsb.org/structure/4F6U" target="_blank">4F6U</a></li>
+<li><a href="https://www.rcsb.org/structure/4F6W" target="_blank">4F6W</a></li>
+<li><a href="https://www.rcsb.org/structure/4F70" target="_blank">4F70</a></li>
+<li><a href="https://www.rcsb.org/structure/4F7J" target="_blank">4F7J</a></li>
+<li><a href="https://www.rcsb.org/structure/4F7L" target="_blank">4F7L</a></li>
+<li><a href="https://www.rcsb.org/structure/4F7N" target="_blank">4F7N</a></li>
+<li><a href="https://www.rcsb.org/structure/4F7S" target="_blank">4F7S</a></li>
+<li><a href="https://www.rcsb.org/structure/4G6L" target="_blank">4G6L</a></li>
+<li><a href="https://www.rcsb.org/structure/5BNJ" target="_blank">5BNJ</a></li>
+<li><a href="https://www.rcsb.org/structure/5CEI" target="_blank">5CEI</a></li>
+<li><a href="https://www.rcsb.org/structure/5FGK" target="_blank">5FGK</a></li>
+<li><a href="https://www.rcsb.org/structure/5HBE" target="_blank">5HBE</a></li>
+<li><a href="https://www.rcsb.org/structure/5HBH" target="_blank">5HBH</a></li>
+<li><a href="https://www.rcsb.org/structure/5HBJ" target="_blank">5HBJ</a></li>
+<li><a href="https://www.rcsb.org/structure/5HNB" target="_blank">5HNB</a></li>
+<li><a href="https://www.rcsb.org/structure/5HVY" target="_blank">5HVY</a></li>
+<li><a href="https://www.rcsb.org/structure/5I5Z" target="_blank">5I5Z</a></li>
+<li><a href="https://www.rcsb.org/structure/5ICP" target="_blank">5ICP</a></li>
+<li><a href="https://www.rcsb.org/structure/5IDN" target="_blank">5IDN</a></li>
+<li><a href="https://www.rcsb.org/structure/5XQX" target="_blank">5XQX</a></li>
+<li><a href="https://www.rcsb.org/structure/5XS2" target="_blank">5XS2</a></li>
+<li><a href="https://www.rcsb.org/structure/6T41" target="_blank">6T41</a></li>
+</div>
+<p><a href="pdb_data/P24863/dom1_P24863_conserv.pse" download="dom1_P24863.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<br><br>
+<h5 class=w3-text-teal>[ Alpha Fold Model ]   <small><a href="https://alphafold.ebi.ac.uk/entry/P24863" target="_blank">(go)</a></small></h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_af");
+    stage.loadFile("AF_model/co_AF-P24863-F1-model_v3.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_af" style="width:500px; height:400px;"></div>
+<br><br>
+<h4 class=w3-text-teal>Known binders annotated in ChEMBL</h4>
+<p>
+</p>
+<table>
+<thead>
+<th>molecule_chembl_id</th>
+<th>structure</th>
+<th>assay_type</th>
+<th>relation</th>
+<th>values</th>
+<th>units</th>
+<th>mol_wt</th>
+<th>smiles</th>
+<th>organism</th>
+<th>assay_chembl_id</th>
+<th>bao_label</th>
+</thead>
+</table>
+
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+
+  <footer id="myFooter">
+<!--
+  <div class="w3-container w3-theme-l5 w3-padding-16">
+     <h2>Footer</h2>
+    </div>
+-->
+    <div class="w3-container w3-theme-l2">
+      <p>&copy; 2022 <a title="our home page" href="" target="_blank">CAU-CBI</a>/<a href="https://kbds.re.kr/" title="Korea Bio Data Station" target="_blank">K-BDS</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+

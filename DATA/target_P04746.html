@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eProteinWorkbench</title>
+<link rel="icon" href="../myicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="../w3-theme-black.css">
+<link rel="stylesheet" href="../other_setting.css">
+<link rel="stylesheet" href="../fonts_googleapis_css_family_Roboto.css">
+<link rel="stylesheet" href="../font-awesome.min.css">
+<link rel="stylesheet" href="../popup.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.columns{column-count: 4;}
+</style>
+<script src="ngl/dist/ngl.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-white">HOME</a>
+    <a href="../Ligand.html" class="w3-bar-item w3-button w3-theme-white">LIGAND</a>
+    <a href="../hProteome.html" class="w3-bar-item w3-button w3-theme-l1">hPROTEOME</a>
+    <a href="../Others.html" class="w3-bar-item w3-button w3-theme-white">OTHERS</a>
+    <a href="../Document.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DOCUMENT</a>
+  </div>
+</div> 
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:0px">
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+
+<h3 class=w3-text-teal><a href="https://www.uniprot.org/uniprotkb/P04746/entry" target="_blank">P04746 | AMYP_HUMAN | Pancreatic alpha-amylase (AMY2A)</a></h3>
+<h4 class=w3-text-teal>3D structures mapped by conservation among orthologs</h4>
+<h5 class=w3-text-teal>[ Domain: "Glycosyl hydrolase domain" // Alpha-amylase_C ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom1");
+    stage.loadFile("pdb_data/P04746/co_dom1_1B2Y_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1BSI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1CPU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1HNY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1KB3_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1KBB_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1KBK_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1KGU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1KGW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1KGX_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1U2Y_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1U30_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1U33_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XCW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XCX_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XD0_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XD1_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XGZ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XH0_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XH1_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_1XH2_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_2CPU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_2QMK_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_2QV4_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3BAI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3BAJ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3BAK_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3BAW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3BAX_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3BAY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3CPU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3IJ7_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3IJ8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3IJ9_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3OLD_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3OLE_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3OLG_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_3OLI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_4GQQ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_4GQR_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_4W93_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_4X9Y_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_5E0F_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_5EMY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_5KEZ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_5TD4_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_5U3A_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom1_5VA9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom1" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1B2Y" target="_blank">1B2Y</a></li>
+<li><a href="https://www.rcsb.org/structure/1BSI" target="_blank">1BSI</a></li>
+<li><a href="https://www.rcsb.org/structure/1CPU" target="_blank">1CPU</a></li>
+<li><a href="https://www.rcsb.org/structure/1HNY" target="_blank">1HNY</a></li>
+<li><a href="https://www.rcsb.org/structure/1KB3" target="_blank">1KB3</a></li>
+<li><a href="https://www.rcsb.org/structure/1KBB" target="_blank">1KBB</a></li>
+<li><a href="https://www.rcsb.org/structure/1KBK" target="_blank">1KBK</a></li>
+<li><a href="https://www.rcsb.org/structure/1KGU" target="_blank">1KGU</a></li>
+<li><a href="https://www.rcsb.org/structure/1KGW" target="_blank">1KGW</a></li>
+<li><a href="https://www.rcsb.org/structure/1KGX" target="_blank">1KGX</a></li>
+<li><a href="https://www.rcsb.org/structure/1U2Y" target="_blank">1U2Y</a></li>
+<li><a href="https://www.rcsb.org/structure/1U30" target="_blank">1U30</a></li>
+<li><a href="https://www.rcsb.org/structure/1U33" target="_blank">1U33</a></li>
+<li><a href="https://www.rcsb.org/structure/1XCW" target="_blank">1XCW</a></li>
+<li><a href="https://www.rcsb.org/structure/1XCX" target="_blank">1XCX</a></li>
+<li><a href="https://www.rcsb.org/structure/1XD0" target="_blank">1XD0</a></li>
+<li><a href="https://www.rcsb.org/structure/1XD1" target="_blank">1XD1</a></li>
+<li><a href="https://www.rcsb.org/structure/1XGZ" target="_blank">1XGZ</a></li>
+<li><a href="https://www.rcsb.org/structure/1XH0" target="_blank">1XH0</a></li>
+<li><a href="https://www.rcsb.org/structure/1XH1" target="_blank">1XH1</a></li>
+<li><a href="https://www.rcsb.org/structure/1XH2" target="_blank">1XH2</a></li>
+<li><a href="https://www.rcsb.org/structure/2CPU" target="_blank">2CPU</a></li>
+<li><a href="https://www.rcsb.org/structure/2QMK" target="_blank">2QMK</a></li>
+<li><a href="https://www.rcsb.org/structure/2QV4" target="_blank">2QV4</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAI" target="_blank">3BAI</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAJ" target="_blank">3BAJ</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAK" target="_blank">3BAK</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAW" target="_blank">3BAW</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAX" target="_blank">3BAX</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAY" target="_blank">3BAY</a></li>
+<li><a href="https://www.rcsb.org/structure/3CPU" target="_blank">3CPU</a></li>
+<li><a href="https://www.rcsb.org/structure/3IJ7" target="_blank">3IJ7</a></li>
+<li><a href="https://www.rcsb.org/structure/3IJ8" target="_blank">3IJ8</a></li>
+<li><a href="https://www.rcsb.org/structure/3IJ9" target="_blank">3IJ9</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLD" target="_blank">3OLD</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLE" target="_blank">3OLE</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLG" target="_blank">3OLG</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLI" target="_blank">3OLI</a></li>
+<li><a href="https://www.rcsb.org/structure/4GQQ" target="_blank">4GQQ</a></li>
+<li><a href="https://www.rcsb.org/structure/4GQR" target="_blank">4GQR</a></li>
+<li><a href="https://www.rcsb.org/structure/4W93" target="_blank">4W93</a></li>
+<li><a href="https://www.rcsb.org/structure/4X9Y" target="_blank">4X9Y</a></li>
+<li><a href="https://www.rcsb.org/structure/5E0F" target="_blank">5E0F</a></li>
+<li><a href="https://www.rcsb.org/structure/5EMY" target="_blank">5EMY</a></li>
+<li><a href="https://www.rcsb.org/structure/5KEZ" target="_blank">5KEZ</a></li>
+<li><a href="https://www.rcsb.org/structure/5TD4" target="_blank">5TD4</a></li>
+<li><a href="https://www.rcsb.org/structure/5U3A" target="_blank">5U3A</a></li>
+<li><a href="https://www.rcsb.org/structure/5VA9" target="_blank">5VA9</a></li>
+</div>
+<p><a href="pdb_data/P04746/dom1_P04746_conserv.pse" download="dom1_P04746.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<h5 class=w3-text-teal>[ Domain: "TIM barrels" // Alpha-amylase ]</h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_dom2");
+    stage.loadFile("pdb_data/P04746/co_dom2_1B2Y_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1BSI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1CPU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1HNY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1KB3_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1KBB_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1KBK_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1KGU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1KGW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1KGX_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1U2Y_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1U30_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1U33_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XCW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XCX_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XD0_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XD1_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XGZ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XH0_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XH1_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_1XH2_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_2CPU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_2QMK_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_2QV4_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3BAI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3BAJ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3BAK_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3BAW_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3BAX_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3BAY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3CPU_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3IJ7_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3IJ8_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3IJ9_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3OLD_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3OLE_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3OLG_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_3OLI_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_4GQQ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_4GQR_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_4W93_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_4X9Y_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_5E0F_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_5EMY_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_5KEZ_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_5TD4_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_5U3A_A_cln.pdb").then(defaultStructureRepresentation);
+    stage.loadFile("pdb_data/P04746/co_dom2_5VA9_A_cln.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_dom2" style="width:500px; height:400px;">
+<li><a href="https://www.rcsb.org/structure/1B2Y" target="_blank">1B2Y</a></li>
+<li><a href="https://www.rcsb.org/structure/1BSI" target="_blank">1BSI</a></li>
+<li><a href="https://www.rcsb.org/structure/1CPU" target="_blank">1CPU</a></li>
+<li><a href="https://www.rcsb.org/structure/1HNY" target="_blank">1HNY</a></li>
+<li><a href="https://www.rcsb.org/structure/1KB3" target="_blank">1KB3</a></li>
+<li><a href="https://www.rcsb.org/structure/1KBB" target="_blank">1KBB</a></li>
+<li><a href="https://www.rcsb.org/structure/1KBK" target="_blank">1KBK</a></li>
+<li><a href="https://www.rcsb.org/structure/1KGU" target="_blank">1KGU</a></li>
+<li><a href="https://www.rcsb.org/structure/1KGW" target="_blank">1KGW</a></li>
+<li><a href="https://www.rcsb.org/structure/1KGX" target="_blank">1KGX</a></li>
+<li><a href="https://www.rcsb.org/structure/1U2Y" target="_blank">1U2Y</a></li>
+<li><a href="https://www.rcsb.org/structure/1U30" target="_blank">1U30</a></li>
+<li><a href="https://www.rcsb.org/structure/1U33" target="_blank">1U33</a></li>
+<li><a href="https://www.rcsb.org/structure/1XCW" target="_blank">1XCW</a></li>
+<li><a href="https://www.rcsb.org/structure/1XCX" target="_blank">1XCX</a></li>
+<li><a href="https://www.rcsb.org/structure/1XD0" target="_blank">1XD0</a></li>
+<li><a href="https://www.rcsb.org/structure/1XD1" target="_blank">1XD1</a></li>
+<li><a href="https://www.rcsb.org/structure/1XGZ" target="_blank">1XGZ</a></li>
+<li><a href="https://www.rcsb.org/structure/1XH0" target="_blank">1XH0</a></li>
+<li><a href="https://www.rcsb.org/structure/1XH1" target="_blank">1XH1</a></li>
+<li><a href="https://www.rcsb.org/structure/1XH2" target="_blank">1XH2</a></li>
+<li><a href="https://www.rcsb.org/structure/2CPU" target="_blank">2CPU</a></li>
+<li><a href="https://www.rcsb.org/structure/2QMK" target="_blank">2QMK</a></li>
+<li><a href="https://www.rcsb.org/structure/2QV4" target="_blank">2QV4</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAI" target="_blank">3BAI</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAJ" target="_blank">3BAJ</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAK" target="_blank">3BAK</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAW" target="_blank">3BAW</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAX" target="_blank">3BAX</a></li>
+<li><a href="https://www.rcsb.org/structure/3BAY" target="_blank">3BAY</a></li>
+<li><a href="https://www.rcsb.org/structure/3CPU" target="_blank">3CPU</a></li>
+<li><a href="https://www.rcsb.org/structure/3IJ7" target="_blank">3IJ7</a></li>
+<li><a href="https://www.rcsb.org/structure/3IJ8" target="_blank">3IJ8</a></li>
+<li><a href="https://www.rcsb.org/structure/3IJ9" target="_blank">3IJ9</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLD" target="_blank">3OLD</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLE" target="_blank">3OLE</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLG" target="_blank">3OLG</a></li>
+<li><a href="https://www.rcsb.org/structure/3OLI" target="_blank">3OLI</a></li>
+<li><a href="https://www.rcsb.org/structure/4GQQ" target="_blank">4GQQ</a></li>
+<li><a href="https://www.rcsb.org/structure/4GQR" target="_blank">4GQR</a></li>
+<li><a href="https://www.rcsb.org/structure/4W93" target="_blank">4W93</a></li>
+<li><a href="https://www.rcsb.org/structure/4X9Y" target="_blank">4X9Y</a></li>
+<li><a href="https://www.rcsb.org/structure/5E0F" target="_blank">5E0F</a></li>
+<li><a href="https://www.rcsb.org/structure/5EMY" target="_blank">5EMY</a></li>
+<li><a href="https://www.rcsb.org/structure/5KEZ" target="_blank">5KEZ</a></li>
+<li><a href="https://www.rcsb.org/structure/5TD4" target="_blank">5TD4</a></li>
+<li><a href="https://www.rcsb.org/structure/5U3A" target="_blank">5U3A</a></li>
+<li><a href="https://www.rcsb.org/structure/5VA9" target="_blank">5VA9</a></li>
+</div>
+<p><a href="pdb_data/P04746/dom2_P04746_conserv.pse" download="dom2_P04746.pse"><img src="download.png" width="15" height="15"></a> download pymol session</p>
+<br><br>
+<h5 class=w3-text-teal>[ Alpha Fold Model ]   <small><a href="https://alphafold.ebi.ac.uk/entry/P04746" target="_blank">(go)</a></small></h5>
+<script>
+  function defaultStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "bfactor", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  function chainStructureRepresentation( component ){
+      if( component.type !== "structure" ) return;
+      component.addRepresentation( "cartoon", {
+          colorScheme: "chainid", colorReverse: true, aspectRatio: 3.0, scale: 1.0 } );
+      component.addRepresentation( "ball+stick", {
+          sele: "hetero and not water and not ion", multipleBond: true } );
+      component.autoView()
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var stage = new NGL.Stage("viewport_af");
+    stage.loadFile("AF_model/co_AF-P04746-F1-model_v3.pdb").then(defaultStructureRepresentation);
+  });
+</script>
+<div class="columns" id="viewport_af" style="width:500px; height:400px;"></div>
+<br><br>
+<h4 class=w3-text-teal>Known binders annotated in ChEMBL</h4>
+<p>
+<a href="chembl_data/P04746_Ki_1000_600.csv" download="P04746_Ki_1000_600.csv"><img src="download.png" width="15" height="15"></a> Ki table
+</p>
+<table>
+<thead>
+<th>molecule_chembl_id</th>
+<th>structure</th>
+<th>assay_type</th>
+<th>relation</th>
+<th>values</th>
+<th>units</th>
+<th>mol_wt</th>
+<th>smiles</th>
+<th>organism</th>
+<th>assay_chembl_id</th>
+<th>bao_label</th>
+</thead>
+<tr>
+<td><a href="https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL1230193/" target="_blank">CHEMBL1230193</a></td>
+<td>
+<?xml version="1.0"?>
+<svg version="1.1" id="topsvg"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:cml="http://www.xml-cml.org/schema" x="0" y="0" width="200px" height="200px" viewBox="0 0 100 100">
+<title>OBDepict</title>
+<rect x="0" y="0" width="100" height="100" fill="white"/>
+<text text-anchor="middle" font-size="6" fill ="black" font-family="sans-serif"
+x="50" y="98" ></text>
+<g transform="translate(0,0)">
+<svg width="100" height="100" x="0" y="0" viewBox="0 0 508.026 280.199"
+font-family="sans-serif" stroke="rgb(0,0,0)" stroke-width="2"  stroke-linecap="round">
+<line x1="244.0" y1="102.2" x2="257.5" y2="125.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="259.5" y1="120.5" x2="260.8" y2="121.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="261.1" y1="116.5" x2="263.5" y2="117.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="262.6" y1="112.4" x2="266.2" y2="114.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="264.2" y1="108.4" x2="268.9" y2="111.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="265.8" y1="104.4" x2="271.6" y2="107.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="267.4" y1="100.3" x2="274.3" y2="104.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="292.114436 185.558337 308.978537 206.767818 302.050334 210.767818 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="292.1" y1="185.6" x2="319.1" y2="185.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="338.6" y1="174.3" x2="352.1" y2="150.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="352.114436 150.917321 332.626216 132.090497 338.973043 127.220406 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="360.3" y1="107.3" x2="361.9" y2="106.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="358.6" y1="103.3" x2="361.4" y2="102.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="356.9" y1="99.4" x2="360.9" y2="98.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="355.1" y1="95.4" x2="360.4" y2="94.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="353.4" y1="91.4" x2="359.9" y2="89.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="351.7" y1="87.4" x2="359.4" y2="85.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="362.5" y1="112.3" x2="323.8" y2="101.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="323.8" y1="101.9" x2="316.8" y2="75.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="429.388502 130.211798 456.310590 133.284445 454.240038 141.011851 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="429.4" y1="130.2" x2="448.5" y2="111.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="419.035740 168.848831 429.835794 193.700367 422.108387 195.770919 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="419.0" y1="168.8" x2="445.1" y2="175.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="377.2" y1="183.6" x2="376.0" y2="182.4" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="374.6" y1="187.0" x2="372.6" y2="185.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="372.0" y1="190.5" x2="369.1" y2="187.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="369.4" y1="194.0" x2="365.6" y2="190.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="366.9" y1="197.5" x2="362.1" y2="192.7" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="364.3" y1="201.0" x2="358.6" y2="195.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="380.4" y1="179.2" x2="387.4" y2="205.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="257.473420 205.558337 247.537521 230.767818 240.609318 226.767818 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="257.5" y1="205.6" x2="271.0" y2="228.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="217.5" y1="186.4" x2="217.5" y2="184.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="213.2" y1="187.0" x2="213.2" y2="184.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="208.9" y1="187.6" x2="208.9" y2="183.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="204.6" y1="188.3" x2="204.6" y2="182.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="200.3" y1="188.9" x2="200.3" y2="182.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="196.0" y1="189.6" x2="196.0" y2="181.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="222.8" y1="185.6" x2="209.3" y2="208.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="222.832403 145.558337 222.364726 118.465510 230.296285 119.509720 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="222.8" y1="145.6" x2="196.8" y2="152.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="175.0" y1="146.7" x2="155.9" y2="127.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="160.9" y1="125.5" x2="161.3" y2="127.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="164.9" y1="123.7" x2="165.6" y2="126.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="168.8" y1="122.0" x2="169.9" y2="126.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="172.8" y1="120.3" x2="174.2" y2="125.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="176.8" y1="118.6" x2="178.5" y2="125.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="180.8" y1="116.8" x2="182.8" y2="124.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="89.0" y1="145.6" x2="60.7" y2="173.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="60.7" y1="173.8" x2="67.7" y2="199.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="73.7" y1="109.1" x2="73.3" y2="107.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="69.7" y1="110.8" x2="68.9" y2="108.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="65.7" y1="112.5" x2="64.6" y2="108.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="61.7" y1="114.3" x2="60.3" y2="109.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="57.8" y1="116.0" x2="56.0" y2="109.5" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="53.8" y1="117.7" x2="51.7" y2="110.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="78.6" y1="106.9" x2="59.5" y2="87.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<polygon points="106.921304 78.637033 85.142415 62.514998 90.799270 56.858144 " stroke-width="2.000000" fill="rgb(0,0,0)"  stroke="rgb(0,0,0)" />
+<line x1="106.9" y1="78.6" x2="113.9" y2="52.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="146.2" y1="83.6" x2="147.7" y2="84.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="146.7" y1="79.3" x2="149.4" y2="80.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="147.2" y1="75.0" x2="151.2" y2="76.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="147.6" y1="70.7" x2="152.9" y2="72.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="148.1" y1="66.4" x2="154.6" y2="68.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="148.6" y1="62.1" x2="156.4" y2="64.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="145.6" y1="89.0" x2="171.6" y2="82.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="352.1" y1="150.9" x2="362.5" y2="112.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="362.5" y1="112.3" x2="388.5" y2="105.3" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="410.3" y1="111.1" x2="429.4" y2="130.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="429.4" y1="130.2" x2="419.0" y2="168.8" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="419.0" y1="168.8" x2="380.4" y2="179.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="380.4" y1="179.2" x2="352.1" y2="150.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="222.8" y1="145.6" x2="257.5" y2="125.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="257.5" y1="125.6" x2="280.9" y2="139.1" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="292.1" y1="158.6" x2="292.1" y2="185.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="292.1" y1="185.6" x2="257.5" y2="205.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="257.5" y1="205.6" x2="222.8" y2="185.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="222.8" y1="185.6" x2="222.8" y2="145.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="127.6" y1="155.9" x2="89.0" y2="145.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="123.7" y1="147.4" x2="96.6" y2="140.2" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="89.0" y1="145.6" x2="78.6" y2="106.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="78.6" y1="106.9" x2="106.9" y2="78.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="106.9" y1="78.6" x2="145.6" y2="89.0" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="145.6" y1="89.0" x2="155.9" y2="127.6" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<line x1="155.9" y1="127.6" x2="127.6" y2="155.9" stroke="rgb(0,0,0)"  stroke-width="2.0"/>
+<text x="65.058285" y="220.479642" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="34.000000" y="125.274066" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="32.352762" y="86.637033" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >HO</text>
+<text x="188.548132" y="125.274066" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="178.195370" y="163.911099" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="178.195370" y="179.911099" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >H</text>
+<text x="72.637033" y="58.352762" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="111.274066" y="48.000000" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="149.911099" y="58.352762" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="178.195370" y="86.637033" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="222.053451" y="113.900543" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="271.473420" y="98.917321" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="211.473420" y="98.917321" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >H</text>
+<text x="223.473420" y="102.597321" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="229.973420" y="98.917321" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >C</text>
+<text x="286.114436" y="153.558337" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="176.832403" y="193.558337" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="184.832403" y="228.199354" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >HO</text>
+<text x="231.473420" y="248.199354" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="271.473420" y="248.199354" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="306.114436" y="228.199354" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="326.114436" y="193.558337" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="321.763979" y="127.183188" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="346.114436" y="81.643255" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="395.104231" y="109.927526" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="346.114436" y="215.485864" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="384.751469" y="225.838625" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="295.477403" y="71.290493" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >HO</text>
+<text x="423.388502" y="215.485864" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="451.672773" y="187.201592" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+<text x="462.025535" y="148.564559" fill="rgb(191,191,191)"  stroke="rgb(191,191,191)" stroke-width="1" font-size="16" >H</text>
+<text x="451.672773" y="109.927526" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >OH</text>
+</svg>
+</g>
+</svg>
+
+</td>
+<td>Ki</td>
+<td>=</td>
+<td>75.0</td>
+<td>nM</td>
+<td>483.47</td>
+<td>C[C@H]1O[C@H](O[C@@H]2[C@@H](CO)O[C@H](O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@@H]1N[C@H]1C=C(CO)[C@@H](O)[C@H](O)[C@H]1O</td>
+<td>Homo sapiens</td>
+<td><a href="https://www.ebi.ac.uk/chembl/assay_report_card/CHEMBL3618758/" target="_blank">CHEMBL3618758</a></td>
+<td>single protein format</td>
+</tr>
+</table>
+
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+
+  <footer id="myFooter">
+<!--
+  <div class="w3-container w3-theme-l5 w3-padding-16">
+     <h2>Footer</h2>
+    </div>
+-->
+    <div class="w3-container w3-theme-l2">
+      <p>&copy; 2022 <a title="our home page" href="" target="_blank">CAU-CBI</a>/<a href="https://kbds.re.kr/" title="Korea Bio Data Station" target="_blank">K-BDS</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+
